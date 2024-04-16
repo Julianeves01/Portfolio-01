@@ -1,3 +1,12 @@
+
+.dancing-script{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+
+
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +27,55 @@
 html {
     overflow-x: hidden;
 }
-
-
 body {
-    background-color: var(--bg-color);
+    background-color: var (rgba(41, 41, 205, 0.776));
     color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10rem;
+    background-color: rgba(243, 13, 205, 0.151);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between; /*alinha os elementos um ao lado do outro no eixo horizontal */
+    align-items: center; /*alinha os elementos no centro no eixo vertical */
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.03);
+}
+
+.logo span {
+    text-shadow: 0 0 3px var(--main-color);
+
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    border-radius: 3px;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color:rgba(255, 20, 145, 0.425);
+    border-bottom: 3px solid var(--main-color);
 }
